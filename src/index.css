@@ -14,5 +14,6 @@
 .img_styling img {
 
     border: black solid 1px;
+    border-radius: 30px;
     margin: 1px;
 }

@@ -146,49 +146,56 @@ import ReactDOM from 'react-dom';
 
 /* ##################### Dynamically adding CSS property in JSX ######################################### */
 
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/350";
-const img3 = "https://picsum.photos/300/400";
-const link = "https://picsum.photos/300/400";
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/350";
+// const img3 = "https://picsum.photos/300/400";
+// const link = "https://picsum.photos/300/400";
+//
+// const heading = {
+//     color: 'blueviolet',
+//     textAlign: 'center',
+//     textTransform: 'capitalize',
+//     fontFamily: 'Rye, cursive'
+// };
+//
+// // const currentDate = new Date(2021, 7,31,21);
+// const currentDate = new Date();
+// let hour = currentDate.getHours();
+// let message;
+// const dateStyle = {};
+// if (hour < 12){
+//     dateStyle.color = "green";
+//     message = "Good Morning !!"
+// }
+// else if (hour > 12 && hour < 17){
+//     dateStyle.color = "orange";
+//     message = "Good AfterNoon !!"
+//
+// }
+// else if (hour > 17 && hour < 20){
+//     dateStyle.color = "blue";
+//     message = "Good Evening !!"
+// }
+// else {
+//     dateStyle.color = "red"
+//     message = "Good Night !!"
+// }
+//
+// ReactDOM.render(
+//     <>
+//         <h1 style={heading}> Example of Dynamic CSS in JSX </h1>
+//         <h1 style={heading}> Hi there, <span style={dateStyle}>{message}</span></h1>
+//         <img src={img1} alt="ramdom image 1"/>
+//         <img src={img2} alt="ramdom image 2"/>
+//         <a href={link} target="_blank">
+//             <img src={img3} alt="ramdom image 3"/>
+//         </a>
+//     </>,
+//     document.getElementById("root"));
 
-const heading = {
-    color: 'blueviolet',
-    textAlign: 'center',
-    textTransform: 'capitalize',
-    fontFamily: 'Rye, cursive'
-};
 
-// const currentDate = new Date(2021, 7,31,21);
-const currentDate = new Date();
-let hour = currentDate.getHours();
-let message;
-const dateStyle = {};
-if (hour < 12){
-    dateStyle.color = "green";
-    message = "Good Morning !!"
-}
-else if (hour > 12 && hour < 17){
-    dateStyle.color = "orange";
-    message = "Good AfterNoon !!"
+/* ##################### Now start referring respective App.js ######################################### */
 
-}
-else if (hour > 17 && hour < 20){
-    dateStyle.color = "blue";
-    message = "Good Evening !!"
-}
-else {
-    dateStyle.color = "red"
-    message = "Good Night !!"
-}
+import App from "./components/functionalComp/App";
 
-ReactDOM.render(
-    <>
-        <h1 style={heading}> Example of Dynamic CSS in JSX </h1>
-        <h1 style={heading}> Hi there, <span style={dateStyle}>{message}</span></h1>
-        <img src={img1} alt="ramdom image 1"/>
-        <img src={img2} alt="ramdom image 2"/>
-        <a href={link} target="_blank">
-            <img src={img3} alt="ramdom image 3"/>
-        </a>
-    </>,
-    document.getElementById("root"));
+ReactDOM.render( <App/>, document.getElementById("root"));
