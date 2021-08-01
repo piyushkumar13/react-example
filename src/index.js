@@ -194,8 +194,15 @@ import ReactDOM from 'react-dom';
 //     document.getElementById("root"));
 
 
-/* ##################### Now start referring respective App.js ######################################### */
+/* ##################### Functional Components Now start referring App.js for more examples ######################## */
 
-import App from "./components/functionalComp/App";
+// import App from "./components/functionalComp/App";
+//
+// ReactDOM.render( <App/>, document.getElementById("root"));
 
-ReactDOM.render( <App/>, document.getElementById("root"));
+
+/* ##################### Class Components Now start referring App.js for more examples ######################## */
+
+import App from "./components/classComp/App"
+
+ReactDOM.render(<App/>, document.getElementById("root"));

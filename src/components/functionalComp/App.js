@@ -107,30 +107,30 @@
 
 /* ##################### Props Example 4 ######################################### */
 
-import Image from './MyImage';
-import MyStaticImgs from "./MyStaticImgs";
-import sampleData from '../../Sampledata'
-
-const imageComp = "dynamic";
-const Images = () => {
-
-    if (imageComp === "static") {
-        return <MyStaticImgs/>
-    }
-    else if (imageComp === "dynamic"){
-        return  sampleData.map((val) => <Image key={val.id} imageSrc={val.imageSrc} description={val.description} altText={val.altText}/>)
-    }
-}
-
-function App() {
-
-    return (
-        <>
-            <Images/>
-            {/*{ imageComp === "static" ? <MyStaticImgs/> : sampleData.map((val) => <Image key={val.id} imageSrc={val.imageSrc} description={val.description} altText={val.altText}/>)}*/}
-        </>
-
-    );
-}
-
-export default App;
+// import Image from './MyImage';
+// import MyStaticImgs from "./MyStaticImgs";
+// import sampleData from '../../Sampledata'
+//
+// const imageComp = "dynamic";
+// const Images = () => {
+//
+//     if (imageComp === "static") {
+//         return <MyStaticImgs/>
+//     }
+//     else if (imageComp === "dynamic"){
+//         return  sampleData.map((val) => <Image key={val.id} imageSrc={val.imageSrc} description={val.description} altText={val.altText}/>)
+//     }
+// }
+//
+// function App() {
+//
+//     return (
+//         <>
+//             <Images/>
+//             {/*{ imageComp === "static" ? <MyStaticImgs/> : sampleData.map((val) => <Image key={val.id} imageSrc={val.imageSrc} description={val.description} altText={val.altText}/>)}*/}
+//         </>
+//
+//     );
+// }
+//
+// export default App;
