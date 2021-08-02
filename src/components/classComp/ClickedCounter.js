@@ -19,7 +19,7 @@ class ClickedCounter extends Component{
             <>
                 <h1 className="heading"> Clicked Counter Higher Order Example</h1>
                 <div className="centerContent">
-                    <button onClick={incrementCounter}>Clicked {countVal} times</button>
+                    <button onClick={incrementCounter}>Clicked {countVal} times - {this.props.name}</button>
                 </div>
 
             </>

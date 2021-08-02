@@ -285,7 +285,7 @@ class App extends Component {
         return (
             <>
                 <MyHeading/>
-                <ClickedCounter/>
+                <ClickedCounter name="Piyush"/>
                 <HoverCounter/>
             </>
         );
