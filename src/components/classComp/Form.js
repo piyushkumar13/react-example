@@ -25,7 +25,7 @@ class Form extends Component {
 
         const {inputText, subjects, sports, house} = this.state;
 
-        let message = `Form submitted with values : \n inputText : ${inputText} \n Subject : ${subjects} \n Sports : ${sports} \n House : ${house}`
+        let message = `Form submitted with values : \n Name : ${inputText} \n Subject : ${subjects} \n Sports : ${sports} \n House : ${house}`
         alert(message)
         event.preventDefault();
         console.log(this.state);

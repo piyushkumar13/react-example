@@ -135,7 +135,149 @@ import MyHeading from "./MyHeading";
 
 /* ##################### Forms Example ######################################### */
 
-import Form from "./Form";
+// import Form from "./Form";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <Form/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Lifecycle Methods Example ######################################### */
+
+// import LifecycleParent from "./LifecycleParent";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <LifecycleParent/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Pure Component vs Regular Component Example ############################### */
+
+// import PureCompExample from "./PureCompExample";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <PureCompExample/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Ref Example ############################### */
+
+// import RefExample from "./RefExample";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <RefExample/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Ref with Class Component Example ############################### */
+
+// import RefForClassComponent from "./RefForClassComponent";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <RefForClassComponent/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### ForwardingRef Example ############################### */
+
+// import ForwardingRefExample from "./ForwardingRefExample";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <ForwardingRefExample/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### ForwardingRef Example ############################### */
+
+// import ErrorBoundary, {Hero} from "./ErrorBoundary";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <ErrorBoundary>
+//                     <Hero heroName="Batman"/>
+//                 </ErrorBoundary>
+//                 <ErrorBoundary>
+//                     <Hero heroName="Superman"/>
+//                 </ErrorBoundary>
+//                 <ErrorBoundary>
+//                     <Hero heroName="Joker"/>
+//                 </ErrorBoundary>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Higher Order Components Example ############################### */
+
+import ClickedCounter from "./ClickedCounter";
+import HoverCounter from "./HoverCounter";
 
 class App extends Component {
 
@@ -143,7 +285,8 @@ class App extends Component {
         return (
             <>
                 <MyHeading/>
-                <Form/>
+                <ClickedCounter/>
+                <HoverCounter/>
             </>
         );
     }
