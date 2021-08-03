@@ -274,10 +274,32 @@ import MyHeading from "./MyHeading";
 // export default App;
 
 
-/* ##################### Higher Order Components Example ############################### */
+/* ##################### Higher Order Components Pattern Example ############################### */
 
-import ClickedCounter from "./ClickedCounter";
-import HoverCounter from "./HoverCounter";
+// import ClickedCounter from "./ClickedCounter";
+// import HoverCounter from "./HoverCounter";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <ClickedCounter name="Piyush"/>
+//                 <HoverCounter/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Render Props Pattern Example ############################### */
+
+import Counter from "./Counter";
+import ClickedCounterTwo from "./ClickedCounterTwo";
+import HoverCounterTwo from "./HoverCounterTwo";
 
 class App extends Component {
 
@@ -285,8 +307,18 @@ class App extends Component {
         return (
             <>
                 <MyHeading/>
-                <ClickedCounter name="Piyush"/>
-                <HoverCounter/>
+                <Counter render={(count, incrementCount)=> <ClickedCounterTwo count={count} increment={incrementCount}/> }/>
+                <Counter render={(count, incrementCount)=> <HoverCounterTwo count={count} increment={incrementCount}/> }/>
+
+                {/* Slight variatioin of render props - we can pass the props as child props */}
+                {/*<Counter>*/}
+                {/*    {(count, incrementCount) => <ClickedCounterTwo count={count} increment={incrementCount}/>}*/}
+                {/*</Counter>*/}
+
+                {/*<Counter>*/}
+                {/*    {(count, incrementCount) => <HoverCounterTwo count={count} increment={incrementCount}/>}*/}
+                {/*</Counter>*/}
+
             </>
         );
     }
