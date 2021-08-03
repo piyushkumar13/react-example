@@ -297,9 +297,39 @@ import MyHeading from "./MyHeading";
 
 /* ##################### Render Props Pattern Example ############################### */
 
-import Counter from "./Counter";
-import ClickedCounterTwo from "./ClickedCounterTwo";
-import HoverCounterTwo from "./HoverCounterTwo";
+// import Counter from "./Counter";
+// import ClickedCounterTwo from "./ClickedCounterTwo";
+// import HoverCounterTwo from "./HoverCounterTwo";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <Counter render={(count, incrementCount)=> <ClickedCounterTwo count={count} increment={incrementCount}/> }/>
+//                 <Counter render={(count, incrementCount)=> <HoverCounterTwo count={count} increment={incrementCount}/> }/>
+//
+//                 {/* Slight variatioin of render props - we can pass the props as child props */}
+//                 {/*<Counter>*/}
+//                 {/*    {(count, incrementCount) => <ClickedCounterTwo count={count} increment={incrementCount}/>}*/}
+//                 {/*</Counter>*/}
+//
+//                 {/*<Counter>*/}
+//                 {/*    {(count, incrementCount) => <HoverCounterTwo count={count} increment={incrementCount}/>}*/}
+//                 {/*</Counter>*/}
+//
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
+
+
+/* ##################### Context Example ############################### */
+
+import ComponentA from "./ComponentA";
 
 class App extends Component {
 
@@ -307,18 +337,7 @@ class App extends Component {
         return (
             <>
                 <MyHeading/>
-                <Counter render={(count, incrementCount)=> <ClickedCounterTwo count={count} increment={incrementCount}/> }/>
-                <Counter render={(count, incrementCount)=> <HoverCounterTwo count={count} increment={incrementCount}/> }/>
-
-                {/* Slight variatioin of render props - we can pass the props as child props */}
-                {/*<Counter>*/}
-                {/*    {(count, incrementCount) => <ClickedCounterTwo count={count} increment={incrementCount}/>}*/}
-                {/*</Counter>*/}
-
-                {/*<Counter>*/}
-                {/*    {(count, incrementCount) => <HoverCounterTwo count={count} increment={incrementCount}/>}*/}
-                {/*</Counter>*/}
-
+                <ComponentA/>
             </>
         );
     }
