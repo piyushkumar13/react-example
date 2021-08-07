@@ -1,6 +1,12 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project contains examples of React Application for **Class Components** as well as **Functional Components**.
+
+To run this project, please follow following steps : (make sure to do yarn install to install dependencies before)
+
+* For **Class Components** - Go to ***src/components/classComp/App.js***, uncomment examples, run **yarn run start** in terminal.
+* For **Functional Components** - Go to ***src/components/functionalComp/App.js***, uncomment examples, run **yarn run start** in terminal.
 
 ## Available Scripts
 
