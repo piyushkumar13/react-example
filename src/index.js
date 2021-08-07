@@ -197,13 +197,13 @@ import {BrowserRouter} from "react-router-dom";
 
 /* ##################### Functional Components Now start referring App.js for more examples ######################## */
 
-import App from "./components/functionalComp/App";
-
-ReactDOM.render(
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>,
-    document.getElementById("root"));
+// import App from "./components/functionalComp/App";
+//
+// ReactDOM.render(
+//     <BrowserRouter>
+//         <App/>
+//     </BrowserRouter>,
+//     document.getElementById("root"));
 
 
 /* ##################### Class Components Now start referring App.js for more examples ######################## */
