@@ -364,23 +364,23 @@ import MyHeading from "../classComp/MyHeading";
  * To create custom hooks, just create normal javascript function with name prefixed with "use".
  * */
 
-import DocumentTitleOne from "./DocumentTitleOne";
-import CounterForCustomHooks from "./CounterForCustomHooks";
-import FormForCustomHooks from "./FormForCustomHooks";
-
-function App() {
-
-    return (
-        <>
-            <MyHeading/>
-            <DocumentTitleOne/>
-            <CounterForCustomHooks/>
-            <FormForCustomHooks/>
-        </>
-
-    );
-}
-export default App;
+// import DocumentTitleOne from "./DocumentTitleOne";
+// import CounterForCustomHooks from "./CounterForCustomHooks";
+// import FormForCustomHooks from "./FormForCustomHooks";
+//
+// function App() {
+//
+//     return (
+//         <>
+//             <MyHeading/>
+//             <DocumentTitleOne/>
+//             <CounterForCustomHooks/>
+//             <FormForCustomHooks/>
+//         </>
+//
+//     );
+// }
+// export default App;
 
 /* ##################### Routing Example ######################################### */
 
