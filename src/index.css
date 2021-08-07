@@ -23,6 +23,30 @@
     justify-content: center;
 }
 
+.navBar {
+    display: flex;
+    background-color: aqua;
+}
+
+.navBar div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    border: blueviolet 1px solid;
+    font-weight: bold;
+}
+
+.highlightLink{
+    border-bottom: brown 2px solid;
+    color: black;
+    font-weight: bold;
+}
+
+.linkStyle{
+    text-decoration: none;
+}
+
 .formStyling{
 
     border: black solid 1px;

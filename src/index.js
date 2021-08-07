@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from "react-router-dom";
 
 // ReactDOM.render(<h1> This is first React Application </h1>, document.getElementById("root"));
 
@@ -196,13 +197,17 @@ import ReactDOM from 'react-dom';
 
 /* ##################### Functional Components Now start referring App.js for more examples ######################## */
 
-// import App from "./components/functionalComp/App";
-//
-// ReactDOM.render( <App/>, document.getElementById("root"));
+import App from "./components/functionalComp/App";
+
+ReactDOM.render(
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>,
+    document.getElementById("root"));
 
 
 /* ##################### Class Components Now start referring App.js for more examples ######################## */
 
-import App from "./components/classComp/App"
-
-ReactDOM.render(<App/>, document.getElementById("root"));
+// import App from "./components/classComp/App"
+//
+// ReactDOM.render(<App/>, document.getElementById("root"));

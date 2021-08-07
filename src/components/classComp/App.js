@@ -329,18 +329,39 @@ import MyHeading from "./MyHeading";
 
 /* ##################### Context Example ############################### */
 
-import ComponentA from "./ComponentA";
+// import ComponentA from "./ComponentA";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <ComponentA/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
 
-class App extends Component {
 
-    render() {
-        return (
-            <>
-                <MyHeading/>
-                <ComponentA/>
-            </>
-        );
-    }
-}
+/* ##################### HTTP Request Example ############################### */
 
-export default App;
+// import HttpGetReqExample from "./HttpGetReqExample";
+// import HttpPostReqExample from "./HttpPostReqExample";
+//
+// class App extends Component {
+//
+//     render() {
+//         return (
+//             <>
+//                 <MyHeading/>
+//                 <HttpPostReqExample/>
+//                 <HttpGetReqExample/>
+//             </>
+//         );
+//     }
+// }
+//
+// export default App;
